@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 /*****************
@@ -70,8 +70,13 @@ body{
 .debug footer {
     border-bottom: 2px solid white ;
     background-color: #23272a;
-}   
+} 
+
+.debug .row-footer {
+    height:580px;
+}  
 .debug .col-big-footer {
+    height: 580px;
     background-color: #f08080;
 }
 .debug .col-small-footer {
@@ -80,7 +85,15 @@ body{
 .debug .last-div {
     background-color: #7fffd4;
     height: 80px;
-    max-width: 1200px;
+    width: 1200px;
+}
+.debug .logo-bottom {
+    border: 2px dashed black ;
+    background-color: #ffb6c1;
+}
+.debug .bottone {
+    border: 2px dashed black ;
+    background-color: #ffb6c1;
 }
 /*****************
       HEADER
@@ -154,6 +167,7 @@ section:nth-child(2n) {
 /*****************
       FOOTER
 *****************/ 
+
 .footer-top {
     padding-top: 15px;
     padding-bottom: 45px;
@@ -175,12 +189,24 @@ section:nth-child(2n) {
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 30px;
-    border-top: 2px solid white ;
-    border-bottom: 1px solid white ;
+    border-top: 2px solid #eeeeee ;
+    border-bottom: 2px solid #eeeeee ;
 }
-.logo {
+.row-footer {
+    display: flex;
+    border: 2px dashed black;
 
 }
-.bottone{
-
+.last-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-bottom {
+    text-align: center;
+    padding: 5px;
+}
+.bottone {
+    text-align: center;
+    padding: 5px;
 }
